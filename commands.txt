@@ -15,3 +15,28 @@ to create a new project
 
 //python manage.py runserver
 move to your project folder and run this command to launch server
+
+
+make sure before using runserver command your virtual environment is active
+and you can active/create virtual environment in one folder back of your project using command (2).
+
+--admin panel----
+migrations are done to do some changes in database.
+
+move to project folder
+
+//python manage.py makemigrations
+it prepares that need to be migrated
+
+
+//python manage.py migrate
+to migrate files
+
+//ctrl+c 
+to stop the server to anything that is running (win and mac)
+
+"username : sushant"
+"pass: 12345"
+
+//python manage.py createsuperuser
+to create super user - it will ask username, id and password
