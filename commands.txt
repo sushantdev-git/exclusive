@@ -40,3 +40,27 @@ to stop the server to anything that is running (win and mac)
 
 //python manage.py createsuperuser
 to create super user - it will ask username, id and password
+
+
+--cors--
+A Django App that adds Cross-Origin Resource Sharing (CORS) headers to responses. 
+This allows in-browser requests to your Django application from other origins.
+
+Like there is two domain name - abc.com and efg.com
+now abc.com want to get some data from efg.com so Here we user CORS
+These domain names are also called origins.
+
+CORS can used to specify wich domain will be allowed to shared data or all domins are allowed to share data.
+
+So first abc.com make requests to efg.com and then efg.com verify that is a valid domian name to share data,
+once the efg.com validate the request, it send addition http headers to the abc.com and then abc.com send actual
+request with help of that http headers.
+
+//pipenv install django-cors-headers
+installing django-cors-headers
+
+--django rest----
+This framework is required to throw json format for product,category,orders,
+
+//pipenv install djangorestframework
+installing djangorestframework
