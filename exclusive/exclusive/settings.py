@@ -30,6 +30,9 @@ ALLOWED_HOSTS = ['*'] #allowing all the hosts to interact with our app.
 
 # Application definition
 
+
+#in installed apps we inform django about apps that we are using.
+#here we provider names of external and internal apps that we are using.
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,6 +43,7 @@ INSTALLED_APPS = [
     'corsheaders', #adding corsheaders
     'rest_framework', #adding django rest framework
     'rest_framework.authtoken', #to create custom signup
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -122,6 +126,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'  #this will be used to store media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 CORS_ALLOW_ALL_ORIGINS = True
