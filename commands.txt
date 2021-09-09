@@ -1,0 +1,17 @@
+//pip install pipenv
+to install pip environment
+
+//pipenv shell
+to create a virtual environment
+
+//pipenv install Django==3.0.8
+to install Django
+
+//django-admin
+to see all the commands available
+
+//django-admin startproject nameofproject
+to create a new project
+
+//python manage.py runserver
+move to your project folder and run this command to launch server
